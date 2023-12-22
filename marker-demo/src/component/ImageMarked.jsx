@@ -3,12 +3,14 @@ import { useLocation } from "react-router-dom";
 const ImageMarked = () => {
   const location = useLocation();
 
-  const data = location.state;
-  console.log(data);
+  const image = location.state.image;
+
   return (
     <div>
-      ImageMarked
-      {/* <img src={data} width="30%"/> */}
+      Show image was save
+      <div>
+        <img src={image} width="50%" />
+      </div>
     </div>
   );
 };

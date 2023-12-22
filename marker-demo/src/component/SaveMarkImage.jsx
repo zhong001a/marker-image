@@ -19,7 +19,7 @@ const SaveMarkImage = ({data}) => {
       });
       setSaveImg(response.data)
 
-    //   navigate("/showimage", { state: {  image: response.data }});
+      navigate("/showimage", { state: {  image: response.data }});
 
     } catch (error) {
       console.error('Error saving file on the server:', error);
