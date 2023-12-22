@@ -13,15 +13,18 @@ const Compare = () => {
     };
   
     return (
-      <div style={{ maxWidth: '500px' }} onClick={toggleHandle}>
+      <div style={{ maxWidth: '500px' }} >
         {toggle ? (
           <img src={data.defaultImg} width="50%" />
         ) : (
           <img src={data.markedImg} width="50%" />
         )}
-        
-        {/* <MyComponent data = {data}/> */}
+        <div style={{display:'flex',gap:3}}>
+        <button onClick={toggleHandle}>Display Mark</button>
         <SaveMarkImage data = {data}/>
+
+        </div>
+
       </div>
     );
   };
